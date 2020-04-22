@@ -37,7 +37,7 @@ To use Chef you have to accept the chef licence done by adding
 
 
 - To begin clone the repository
-`git clone git@github.com:victorsibanda/NodeCookbookStarterCode.git`
+`git clone git@github.com:victorsibanda/NodeEnvironment.git`
 
 - In terminal use `berks vendor Cookbooks`
 which will clone the cookbooks into a folder named Cookbooks.
