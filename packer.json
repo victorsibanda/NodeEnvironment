@@ -40,6 +40,19 @@
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
       "run_list" : ["node::default"]
+    },
+    {
+      "type": "shell",
+      "inline": ["mkdir /home/ubuntu/app"]
+    },
+    {
+      "type": "file",
+      "source": "app/",
+      "destination": "/home/ubuntu/app"
+    },
+    {
+        "type" :  "shell",
+        "inline": ["cd /home/ubuntu/app", "sudo npm install", "sudo npm test"]
     }
   ]
 }
